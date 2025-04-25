@@ -1,0 +1,30 @@
+.navBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: -10px;
+    /*
+    watchoyt top -10
+    */
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: center;
+    background-color: #c98893;
+    list-style: none;
+    padding: 10px;
+    width: 90%;
+
+    border-radius: 100px;
+    align-items: center;
+}
+
+.navBar ul li a {
+    font-size: 40px;
+    padding: 10px 10px;
+    color: white;
+    align-items: center;
+}
