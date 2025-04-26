@@ -30,7 +30,7 @@ let imageStyle1InCarousel: React.CSSProperties = {
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)"
 };
 
-let carouselData = [{
+let carouselData = {
     title: "Sobre nós",
     text: "Somos os melhores da regiao",
     imageStyle: imageStyle1InCarousel,
@@ -38,47 +38,48 @@ let carouselData = [{
     alt: "about us image",
     imageTitle: "Trabalho em equipe",
     imageDescription: "Amamos trabalhar em equipe"
-},
-    {
-        title: "Sobre xxxx",
-        text: "Somos os melhores da regiao",
-        imageStyle: imageStyle1InCarousel,
-        imageSrc: carouselImg1,
-        alt: "about us image",
-        imageTitle: "Trabalho em equipe",
-        imageDescription: "Amamos trabalhar em equipe"
-    }
-]
+}
+
+
+//Special section
+import specialSectionImg1 from"./assets/maxresdefault.jpg"
+import {SpecialSection} from "./component/specialSection/SpecialSection.tsx";
+import {SpecialSectionProps} from "./component/specialSection/SpecialSection.tsx";
+
+let imageStyle1InSpecialSection: React.CSSProperties = {
+    width: "50px",
+    height: "auto",
+};
+
+let specialSectionData: SpecialSectionProps = {
+    imgSrc: specialSectionImg1,
+    style: imageStyle1InSpecialSection,
+    alt: "text",
+    imageDescription: "apenas uma imagem",
+    sectionTitle: "123",
+    sectionText: "este é o produto mais cobiçado entre os clientes",
+    buttonText: "clique para ver o produto",
+    buttonLink: "linkzaooo"
+}
 
 
 function App() {
-    const data = ["poop", "vaca", "coco"];
     return (
         <>
             <SiteHeader logo={siteHeaderData.logo} aboutUs={siteHeaderData.aboutUs}
                         ourHistory={siteHeaderData.ourHistory} contact={siteHeaderData.contact}/>
+
             <ImageBanner imgSrc={cakeHeaderImg} alt={"cakeHeader"} bigText={bigTextForBanner} text={slogan}/>
 
-            <div>
-                {data.map((item) => (
-                    <li>{item}</li>
-                ))}
-            </div>
+            <Carousel title={carouselData.title} text={carouselData.text} imageStyle={carouselData.imageStyle}
+                      imageSrc={carouselData.imageSrc} alt={carouselData.alt}
+                      imageTitle={carouselData.imageTitle}
+                      imageDescription={carouselData.imageDescription}></Carousel>
 
-
-            {
-                carouselData.map((carouselData,index) =>
-                    <Carousel key={index}
-                        title={carouselData.title} text={carouselData.text} imageStyle={carouselData.imageStyle}
-                              imageSrc={carouselData.imageSrc} alt={carouselData.alt}
-                              imageTitle={carouselData.imageTitle}
-                              imageDescription={carouselData.imageDescription}></Carousel>
-                )
-            }
+            <SpecialSection data={specialSectionData}/>
 
 
         </>
-
     )
 }
 

@@ -15,8 +15,7 @@ interface carouselProps {
 }
 
 const Carousel = ({title, text,imageStyle, imageSrc, alt, imageTitle, imageDescription}
-                    : carouselSectionProps & carouselProps
-) => {
+                    : carouselSectionProps & carouselProps) => {
 
     return (
         <div className={carouselStyle.carouselContainer}>
@@ -28,7 +27,6 @@ const Carousel = ({title, text,imageStyle, imageSrc, alt, imageTitle, imageDescr
                     {text}
                 </p>
             </div>
-
             <div className={carouselStyle.images}>
                 <img style={imageStyle} src={imageSrc} alt={alt}>
                 </img>
@@ -39,13 +37,7 @@ const Carousel = ({title, text,imageStyle, imageSrc, alt, imageTitle, imageDescr
                     {imageDescription}
                 </p>
             </div>
-
-
-
-
         </div>
-
-
     )
 }
 
