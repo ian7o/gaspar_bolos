@@ -1,0 +1,29 @@
+.specialSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageAndDescription {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+}
+
+.imageAndDescription p {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+}

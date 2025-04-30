@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vw;
+    padding: 25px
+}
+
+.contentContainer{
+    display: flex;
+    background-color: #242424;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.simpleText{
+    font-size: 22px;
+}

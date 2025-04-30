@@ -1,5 +1,5 @@
-import carouselStyle from "./MyCarouselStyle.module.css"
 import React from "react";
+import carouselStyle from "./MyCarouselStyle.module.css"
 
 interface carouselSectionProps {
     title?: string
@@ -7,18 +7,27 @@ interface carouselSectionProps {
 }
 
 interface carouselProps {
-    imageStyle?: React.CSSProperties
-    imageSrc?: string
-    alt?: string
-    imageTitle?: string
-    imageDescription?: string
+    containerStyle?: React.CSSProperties,
+    imageStyle?: React.CSSProperties,
+    imageSrc?: string,
+    alt?: string,
+    imageTitle?: string,
+    imageDescriptionOrText?: string,
 }
 
-const Carousel = ({title, text,imageStyle, imageSrc, alt, imageTitle, imageDescription}
-                    : carouselSectionProps & carouselProps) => {
-
+const Carousel = ({data}: { data: carouselSectionProps & carouselProps }) => {
+    const {
+        containerStyle,
+        title,
+        text,
+        imageStyle,
+        imageSrc,
+        alt,
+        imageTitle,
+        imageDescriptionOrText
+    }: carouselSectionProps & carouselProps = data;
     return (
-        <div className={carouselStyle.carouselContainer}>
+        <div style={containerStyle} className={carouselStyle.carouselContainer}>
             <div className={carouselStyle.section}>
                 <h1>
                     {title}
@@ -34,7 +43,7 @@ const Carousel = ({title, text,imageStyle, imageSrc, alt, imageTitle, imageDescr
                     {imageTitle}
                 </h1>
                 <p>
-                    {imageDescription}
+                    {imageDescriptionOrText}
                 </p>
             </div>
         </div>
