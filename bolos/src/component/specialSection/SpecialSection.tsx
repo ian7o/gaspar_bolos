@@ -7,15 +7,24 @@ interface SpecialSectionProps {
     imgSrc: string
     alt: string
     imageDescription: string
-
     sectionTitle: string
     sectionText: string
-
     buttonText: string
     buttonLink: string
 }
 
-const SpecialSection = ({data : {style, imgSrc, alt, imageDescription, sectionTitle, sectionText, buttonText, buttonLink}}: { data: SpecialSectionProps }) => {
+const SpecialSection = ({
+                            data: {
+                                style,
+                                imgSrc,
+                                alt,
+                                imageDescription,
+                                sectionTitle,
+                                sectionText,
+                                buttonText,
+                                buttonLink
+                            }
+                        }: { data: SpecialSectionProps }) => {
 
     return (
         <div className={specialSectionStyle.specialSection}>

@@ -1,7 +1,6 @@
 import './styles/App.css'
 
 import SiteHeader from "../component/header/CakeHeader.tsx";
-import Carousel from "../component/carrousel/MyCarousel.tsx";
 
 //site header thinks
 const siteHeaderData = {
@@ -13,9 +12,7 @@ const siteHeaderData = {
 
 
 //carousel
-import carouselImg1 from "../assets/zahrawi.jpg"
-import React from "react";
-
+/*
 let imageStyle1InCarousel: React.CSSProperties = {
     width: "500px",
     height: "auto",
@@ -31,13 +28,14 @@ let styleInCarouselContainer = {
 let carouselData = {
     style: styleInCarouselContainer,
 }
-
+ */
 
 //ContactSection
 import {ContactsSection} from "../component/ContactsSection/ContactsSection"
+import React from 'react';
 
 
-let contactsSectionData = {
+const contactsSectionData = {
 
     bigText: "NOSSOS CONTACTOS E INFORMAÇÕES",
     contacts:
