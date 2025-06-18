@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 
+
 import './pages/styles/index.css'
 import App from './pages/App.tsx'
 import Contacts from "./pages/Contacts.tsx"
