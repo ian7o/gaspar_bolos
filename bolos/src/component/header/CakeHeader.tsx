@@ -1,4 +1,3 @@
-import React from "react";
 import headerStyle from "./cakeHeader.module.css"
 
 interface HeaderProps {

@@ -10,29 +10,8 @@ const siteHeaderData = {
     contact: "Our Contacts"
 }
 
-
-//carousel
-/*
-let imageStyle1InCarousel: React.CSSProperties = {
-    width: "500px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)"
-};
-
-let styleInCarouselContainer = {
-    marginTop: " 80px",
-    backgroundColor: "#6F4E37",
-}
-
-let carouselData = {
-    style: styleInCarouselContainer,
-}
- */
-
 //ContactSection
 import {ContactsSection} from "../component/ContactsSection/ContactsSection"
-import React from 'react';
 
 
 const contactsSectionData = {

@@ -7,7 +7,6 @@ import App from './pages/App.tsx';
 import Contacts from "./pages/Contacts.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import Quiz from "./pages/Quiz.tsx";
-import React from "react";
 
 
 createRoot(document.getElementById('root')!).render(
