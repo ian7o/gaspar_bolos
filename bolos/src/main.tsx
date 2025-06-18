@@ -11,7 +11,7 @@ import Quiz from "./pages/Quiz.tsx";
 createRoot(document.getElementById('root')!).render(
         <HashRouter>
             <Routes>
-                <Route path={"/"} element={<App/>}/>
+                <Route path={"/"} element={<Contacts/>}/>
                 <Route path={"/home"} element={<App/>}/>
                 <Route path={"/contact"} element={<Contacts/>}/>
                 <Route path={"/about-us"} element={<AboutUs/>}/>
