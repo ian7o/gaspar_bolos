@@ -9,8 +9,8 @@ interface SpecialSectionProps {
     imageDescription: string
     sectionTitle: string
     sectionText: string
-    buttonText: string
-    buttonLink: string
+    actionImageSrc: string
+    actionImageAlt: string
 }
 
 const SpecialSection = ({
@@ -21,8 +21,8 @@ const SpecialSection = ({
                                 imageDescription,
                                 sectionTitle,
                                 sectionText,
-                                buttonText,
-                                buttonLink
+                                actionImageSrc,
+                                actionImageAlt
                             }
                         }: { data: SpecialSectionProps }) => {
 
@@ -39,11 +39,11 @@ const SpecialSection = ({
                 <p>
                     {sectionText}
                 </p>
-                <a href={buttonLink}>
-                    <button className={specialSectionStyle.button}>
-                        {buttonText}
-                    </button>
-                </a>
+                <img
+                    className={specialSectionStyle.cakeImage}
+                    src={actionImageSrc}
+                    alt={actionImageAlt}
+                />
             </div>
         </div>
     )

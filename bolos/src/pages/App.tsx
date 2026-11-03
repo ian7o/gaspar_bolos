@@ -96,8 +96,8 @@ const specialSectionData: SpecialSectionProps = {
     imageDescription: "Bolo de chocolate com morango",
     sectionTitle: "PRODUTO ESPECIAL EM DESTAQUE",
     sectionText: "Este é o produto mais amado entre os clientes",
-    buttonText: "Clique para ver o produto",
-    buttonLink: "https://pedacosdecacau.pt/outros-chocolates/bolo-exotico-de-chocolate/?attribute_cobertura-bolo-exotico-de-chocolate=Raspas+de+Chocolate&gad_source=1&gad_campaignid=21200508872&gbraid=0AAAAADimJ3ekwzL9S8SD5lm-IxEbvzNOv&gclid=EAIaIQobChMI9sGj6aL2jAMVmqJoCR0j9ijEEAQYAiABEgKEx_D_BwE"
+    actionImageSrc: "/bolo.jpeg",
+    actionImageAlt: "Bolo de chocolate com morangos"
 }
 
 function App() {

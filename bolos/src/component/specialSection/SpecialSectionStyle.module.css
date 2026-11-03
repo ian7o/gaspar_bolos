@@ -23,7 +23,8 @@
     justify-content: center;
 }
 
-.button {
-    width: 200px;
-    height: 55px;
+.cakeImage {
+    width: min(300px, 60vw);
+    height: auto;
+    border-radius: 12px;
 }
